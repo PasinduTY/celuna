@@ -3,6 +3,6 @@ import App from "./App";
 
 test("renders Celuna brand", () => {
   render(<App />);
-  const linkElement = screen.getByText(/Celuna/i);
-  expect(linkElement).toBeInTheDocument();
+  const element = screen.getByText(Celuna);
+  expect(element).toBeInTheDocument();
 });
