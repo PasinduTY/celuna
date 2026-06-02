@@ -17,7 +17,6 @@ const Story = () => (
             playsInline
           />
         </div>
-        <div className="story-accent-box" />
       </div>
 
       {/* Text */}
