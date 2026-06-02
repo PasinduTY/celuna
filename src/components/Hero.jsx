@@ -10,6 +10,7 @@ const Hero = ({ setActivePage }) => {
       <div className="hero-inner">
         {/* Left: Text */}
         <div className="hero-text">
+          <div className="hero-logo-mark">CELUNA</div>
           <span className="hero-eyebrow">✦ Handcrafted Jewellery</span>
 
           <h1 className="hero-title">
@@ -45,13 +46,11 @@ const Hero = ({ setActivePage }) => {
 
         {/* Right: Brand image */}
         <div className="hero-visual">
-          <div className="hero-visual-frame">
-            <img
-              src="/images/hero-brand.jpeg"
-              alt="Celuna handcrafted jewellery"
-              className="hero-img"
-            />
-          </div>
+          <img
+            src="/images/hero-brand.jpeg"
+            alt="Celuna handcrafted jewellery"
+            className="hero-img"
+          />
 
           {/* Floating stat cards */}
           <div className="stat-card stat-card--top">

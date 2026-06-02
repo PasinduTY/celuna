@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap");
 
 /* =====================
    CELUNA — Global Styles
    ===================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --gold:       #c8a96e;
-  --gold-dark:  #a07840;
+  --gold: #c8a96e;
+  --gold-dark: #a07840;
   --gold-light: #e8d4a8;
-  --cream:      #faf6ef;
-  --parchment:  #f2ead8;
-  --dark:       #1e1810;
-  --brown:      #5c3d1e;
-  --muted:      #7a6a58;
-  --border:     rgba(200, 169, 110, 0.25);
-  --shadow:     0 8px 40px rgba(30, 24, 16, 0.10);
-  --font-serif: 'Cormorant Garamond', serif;
-  --font-sans:  'Jost', sans-serif;
+  --cream: #faf6ef;
+  --parchment: #f2ead8;
+  --dark: #1e1810;
+  --brown: #5c3d1e;
+  --muted: #7a6a58;
+  --border: rgba(200, 169, 110, 0.25);
+  --shadow: 0 8px 40px rgba(30, 24, 16, 0.1);
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-sans);
@@ -70,7 +74,9 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  transition: background 0.25s, transform 0.2s;
+  transition:
+    background 0.25s,
+    transform 0.2s;
   text-decoration: none;
 }
 
@@ -111,7 +117,7 @@ body {
 
 .gold-divider::before,
 .gold-divider::after {
-  content: '';
+  content: "";
   flex: 1;
   max-width: 80px;
   height: 1px;
