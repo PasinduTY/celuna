@@ -11,8 +11,16 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 70% 50%, rgba(200,169,110,0.10) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 40% at 10% 80%, rgba(160,120,64,0.07) 0%, transparent 60%),
+    radial-gradient(
+      ellipse 70% 60% at 70% 50%,
+      rgba(200, 169, 110, 0.1) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 10% 80%,
+      rgba(160, 120, 64, 0.07) 0%,
+      transparent 60%
+    ),
     var(--cream);
   z-index: 0;
 }
@@ -50,7 +58,9 @@
   flex-direction: column;
 }
 
-.hero-title-line { display: block; }
+.hero-title-line {
+  display: block;
+}
 .hero-title-line.italic {
   font-style: italic;
   color: var(--gold-dark);
@@ -88,7 +98,9 @@
   gap: 0.35rem;
 }
 
-.badge span { color: var(--gold); }
+.badge span {
+  color: var(--gold);
+}
 
 .badge-divider {
   width: 1px;
@@ -107,51 +119,19 @@
 
 .hero-visual-frame {
   width: 380px;
-  height: 440px;
-  background: linear-gradient(145deg, #f5ede0, #ede0c8);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  height: 480px;
+  overflow: hidden;
   border-radius: 2px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
-.hero-svg {
+.hero-img {
   width: 100%;
   height: 100%;
-  position: absolute;
-  inset: 0;
-}
-
-.hero-brand-badge {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.badge-moon {
-  font-size: 2.5rem;
-  color: var(--gold);
-  line-height: 1;
-  margin-bottom: 0.3rem;
-}
-
-.badge-name {
-  font-family: var(--font-serif);
-  font-size: 2.8rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--gold-dark);
-  letter-spacing: 0.05em;
-}
-
-.badge-tag {
-  font-size: 0.68rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 0.5rem;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 /* Floating stat cards */
@@ -164,8 +144,14 @@
   text-align: center;
 }
 
-.stat-card--top { top: 60px; right: -10px; }
-.stat-card--bottom { bottom: 70px; left: -10px; }
+.stat-card--top {
+  top: 60px;
+  right: -10px;
+}
+.stat-card--bottom {
+  bottom: 70px;
+  left: -10px;
+}
 
 .stat-num {
   font-family: var(--font-serif);
@@ -189,9 +175,20 @@
     gap: 3rem;
     text-align: center;
   }
-  .hero-desc { margin: 0 auto 2rem; }
-  .hero-btns { justify-content: center; }
-  .hero-badges { justify-content: center; }
-  .hero-visual { height: 360px; }
-  .hero-visual-frame { width: 280px; height: 320px; }
+  .hero-desc {
+    margin: 0 auto 2rem;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+  .hero-badges {
+    justify-content: center;
+  }
+  .hero-visual {
+    height: 420px;
+  }
+  .hero-visual-frame {
+    width: 280px;
+    height: 360px;
+  }
 }
