@@ -24,7 +24,7 @@ export const collections = [
     price: "Rs. 150 - 400",
     color: "#7a9e8a",
     bg: "#e8f0ec",
-    image: "/images/3.jpeg",
+    image: "/images/11.png",
   },
   {
     id: "rings",
@@ -33,7 +33,7 @@ export const collections = [
     price: "Rs. 150",
     color: "#c87870",
     bg: "#f5e8e8",
-    image: "/images/4.jpeg",
+    image: "/images/14.png",
   },
 ];
 

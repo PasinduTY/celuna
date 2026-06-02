@@ -26,12 +26,6 @@ const Hero = ({ setActivePage }) => {
             >
               Shop Collections
             </button>
-            <button
-              className="btn-outline"
-              onClick={() => setActivePage("contact")}
-            >
-              Custom Order
-            </button>
           </div>
 
           <div className="hero-badges">
@@ -40,7 +34,7 @@ const Hero = ({ setActivePage }) => {
             </div>
             <div className="badge-divider" />
             <div className="badge">
-              <span>✦</span> Natural Stones
+              <span>✦</span> Beaded Jewellery
             </div>
             <div className="badge-divider" />
             <div className="badge">
@@ -65,8 +59,8 @@ const Hero = ({ setActivePage }) => {
             <div className="stat-lbl">Handmade</div>
           </div>
           <div className="stat-card stat-card--bottom">
-            <div className="stat-num">Natural</div>
-            <div className="stat-lbl">Gemstones</div>
+            <div className="stat-num">Beaded</div>
+            <div className="stat-lbl">Jwellery</div>
           </div>
         </div>
       </div>
