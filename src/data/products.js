@@ -6,7 +6,7 @@ export const collections = [
     price: "Rs. 400 - 600",
     color: "#c8a96e",
     bg: "#f5ede0",
-    image: "/images/1.jpeg",
+    image: "/images/1.png",
   },
   {
     id: "bracelets",
@@ -15,7 +15,7 @@ export const collections = [
     price: "Rs. 300",
     color: "#a07850",
     bg: "#f0e8d8",
-    image: "/images/2.jpeg",
+    image: "/images/22.png",
   },
   {
     id: "earrings",
@@ -44,7 +44,7 @@ export const brandInfo = {
     "Every Celuna piece is handcrafted with love — beaded necklaces, bracelets, earrings, and rings made to be worn every day.",
   story:
     "Celuna began as a passion for creating wearable art through the craft of beading and wire-wrapping. Each piece is individually handmade — no two pieces are ever exactly alike.",
-  whatsapp: "+94XXXXXXXXX",
+  facebook: "https://www.facebook.com/share/1CSd9jWory/?mibextid=wwXIfr",
   instagram: "@celuna.jewellery",
   email: "hello@celuna.com",
 };
