@@ -1,6 +1,6 @@
-import React from 'react';
-import './Footer.css';
-import { brandInfo } from '../data/products';
+import React from "react";
+import "./Footer.css";
+import { brandInfo } from "../data/products";
 
 const Footer = ({ setActivePage }) => (
   <footer className="footer">
@@ -11,15 +11,23 @@ const Footer = ({ setActivePage }) => (
       </div>
 
       <div className="footer-links">
-        <button onClick={() => setActivePage('home')}>Home</button>
-        <button onClick={() => setActivePage('collections')}>Collections</button>
-        <button onClick={() => setActivePage('story')}>Our Story</button>
-        <button onClick={() => setActivePage('contact')}>Contact</button>
+        <button onClick={() => setActivePage("home")}>Home</button>
+        <button onClick={() => setActivePage("collections")}>
+          Collections
+        </button>
+        <button onClick={() => setActivePage("story")}>Our Story</button>
+        <button onClick={() => setActivePage("contact")}>Contact</button>
       </div>
 
       <div className="footer-social">
-        <a href={`https://instagram.com/${brandInfo.instagram.replace('@','')}`} target="_blank" rel="noreferrer">Instagram</a>
-        <a href={`https://wa.me/${brandInfo.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp</a>
+        <a
+          href={`https://instagram.com/${brandInfo.instagram.replace("@", "")}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram
+        </a>
+        {/* <a href={`https://wa.me/${brandInfo.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp</a> */}
       </div>
     </div>
 
