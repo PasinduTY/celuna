@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { brandInfo } from "../data/products";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -16,7 +18,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Connect to a form service like Formspree or EmailJS
     console.log("Form submitted:", form);
     setSent(true);
   };
@@ -45,6 +46,7 @@ const Contact = () => {
             or simply want to say hello — I'd love to hear from you.
           </p>
 
+          {/* Contact info */}
           <div className="contact-info">
             <a
               href={brandInfo.facebook}
@@ -52,7 +54,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="info-icon">📘</span>
+              <FaFacebook className="info-icon" />
               <span>Facebook</span>
             </a>
             <a
@@ -61,11 +63,11 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="info-icon">📷</span>
+              <FaInstagram className="info-icon" />
               <span>{brandInfo.instagram}</span>
             </a>
             <a href={`mailto:${brandInfo.email}`} className="contact-info-item">
-              <span className="info-icon">✉️</span>
+              <MdEmail className="info-icon" />
               <span>{brandInfo.email}</span>
             </a>
           </div>
@@ -106,7 +108,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group">
-                <label>Phone / WhatsApp (optional)</label>
+                <label>Phone (optional)</label>
                 <input
                   name="phone"
                   type="tel"
