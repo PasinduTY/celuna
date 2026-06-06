@@ -45,6 +45,6 @@ export const brandInfo = {
   story:
     "Celuna began as a passion for creating wearable art through the craft of beading and wire-wrapping. Each piece is individually handmade — no two pieces are ever exactly alike.",
   facebook: "https://www.facebook.com/share/1CSd9jWory/?mibextid=wwXIfr",
-  instagram: "@celuna.jewellery",
-  email: "hello@celuna.com",
+  instagram: "@by_celuna",
+  email: "celunagroup7@gmail.com",
 };

@@ -218,4 +218,13 @@
     width: 280px;
     height: 360px;
   }
+
+  .stat-card--top {
+    top: -18px;
+    right: 10px;
+  }
+  .stat-card--bottom {
+    bottom: -18px;
+    left: 10px;
+  }
 }
